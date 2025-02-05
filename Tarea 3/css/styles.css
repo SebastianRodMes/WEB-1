@@ -1,0 +1,159 @@
+* {
+    /*Obligatorio este selector*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Teléfono*/
+
+header {
+   
+    text-align: center;
+    background-color: #2fdb8e;
+    padding: 10px;
+    color: white;
+
+}
+
+#menu-navegacion  {
+    padding: 10px;    
+   background-color: #1f4037;
+   color: antiquewhite;
+   
+}
+
+#menu-navegacion a {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+   background-color: #1f4037;
+   color: antiquewhite;
+   
+}
+
+#menu-navegacion a:hover {
+    background-color: #112d25;
+    color: black;
+}
+
+
+#seccion-principal{
+    padding: 10px;
+    background-color: #e0d3d3;
+}
+
+#seccion-principal h2{
+    text-align: center;
+    color: #1f4037;
+}
+
+#seccion-principal p{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+ 
+
+#seccion-principal article{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30 px;
+    margin-bottom: 20px;
+    font-style: italic;
+    background-color: #e0d3d3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+li a  {
+  color: black;  
+  
+}
+
+
+@media (min-width: 600px) {
+    /* Estilos para tablets */
+    header {
+        text-align: center;
+        background-color: #333333;
+        padding: 10px;
+        color: white;
+    }
+    #menu-navegacion  {
+        padding: 10px;    
+       background-color: #1f4037;
+       color: antiquewhite;
+       
+    }
+    
+    #menu-navegacion a {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+       background-color: #1f4037;
+       color: antiquewhite;
+       
+    }
+    
+    #menu-navegacion a:hover {
+        background-color: #112d25;
+        color: black;
+    }
+    
+    
+    #seccion-principal{
+        padding: 10px;
+        background-color: #e0d3d3;
+    }
+    
+    #seccion-principal h2{
+        text-align: center;
+        color: #1f4037;
+    }
+    
+    #seccion-principal p{
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+     
+    
+    #seccion-principal article{
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-bottom: 30px;
+        background-color: white;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 30 px;
+        margin-bottom: 20px;
+        font-style: italic;
+        background-color: #e0d3d3;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+    }
+    
+    li a  {
+      color: black;  
+      
+    }
+    
+
+        
+}
+
+@media (min-width: 1024px) {
+    /* Estilos para laptops y desktops */
+}
