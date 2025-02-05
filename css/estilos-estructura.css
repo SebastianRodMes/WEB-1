@@ -1,0 +1,158 @@
+* {
+    /*Obligatorio este selector*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", serif;
+}
+
+header {
+    background-color: black;
+    height: 50;
+    /*height */
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+nav {
+    height: 60px;
+    text-align: right;
+    padding: 20px;
+    background-color: rgb(17, 178, 228);
+}
+
+nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    /*quitar la linea*/
+}
+
+/*cuando una pasa encima el mouse se cambia a color azure*/
+nav a:hover {
+    color: azure;
+    text-decoration: underline;
+}
+
+.imagen-grande {
+    height: 340px;
+    /*.. es para salir de la carpeta, irse a buscar la url*/
+    background-image: url(../img/hero1.jpg);
+    /*se pone la imagen q se quiere*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*estira la imagen independientemente del navegador que este la imagen*/
+
+}
+
+main {
+
+    max-width: 1200px;
+    /*el auto es para que se centre*/
+    margin: 50px auto;
+}
+
+.principal {
+
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+    vertical-align: top;
+}
+
+#principal2 {
+    margin-top: 30px;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.imagen-grande2 {
+    height: 340px;
+    background-image: url(../img/imggrande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 30 px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/*media queries
+    si se encoge la pantalla se hace aqua
+    basicamente establece reglas que cuando llegue a 768, se rediseñe esas cosas*/
+
+@media(max-width:768px) {
+    body {
+        background-color: aqua;
+    }
+
+
+    nav {
+        text-align: center;
+    }
+
+    .imagen-grande2 {
+        height: 200px;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .tarjeta p {
+        text-align: left;
+    }
+}
+
+/*moviles*/
+@media(max-width:576px) {
+    body {
+        background-color: red;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .principal {
+
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .principal h2,
+    h3 {
+        text-align: center;
+    }
+    .tarjeta {
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+
+}
